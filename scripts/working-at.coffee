@@ -62,7 +62,7 @@ module.exports = (robot) ->
     user = robot.brain.userForName name
 
     if typeof user is 'object'
-      user.workingat = [ ]
+      user.workingat = false
       msg.send "Okay #{user.name}, got it, you're gone."
     else if typeof user.length > 1
       msg.send "I found #{user.length} people named #{name}"
