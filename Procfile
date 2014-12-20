@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n the-reverend
+web: bin/hubot -a slack -n reverend
