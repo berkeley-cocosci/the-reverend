@@ -50,8 +50,13 @@ module.exports = (robot) ->
     user = robot.brain.userForName name
 
     if typeof user is 'object'
+      timer = false
       user.workingat = msg.match[1]
       msg.send "Okay #{user.name}, got it."
+      callback = ->
+        if user.workingat is msg.match[1]
+          user.workingat = false
+      timer = setTimeout(callback, 4*60*60*1000)
     else if typeof user.length > 1
       msg.send "I found #{user.length} people named #{name}"
     else
