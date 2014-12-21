@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: O7b9XHWCZH3BeaP8ed3D5LLXaw0NMz76dDVwAtvBaaPr5f5eSpXxCCKHszIRTyBugXqFIGIY0trwNt3UXligd9zrdA1uf6QgpNvGaknuLEKwtuetEdJfxlodrftC6lQIBmls3BS1nyMGSJfL5EnJk53fBFhUEo6pTnsNh9rlBWc=
+  app: the-reverend
+  on:
+    repo: suchow/the-reverend
