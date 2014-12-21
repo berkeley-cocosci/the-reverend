@@ -21,7 +21,7 @@ module.exports = (robot) ->
 
     if name is "you" or name.toLowerCase() is robot.name.toLowerCase()
       msg.send "Probably still in Bunhill Fields, just north of London, where I was buried."
-    else if name.match(/(everybody|everyone|every one|every body|people)/i)
+    else if name.match(/(everybody|everyone|every one|every body|people|all)/i)
       messageText = '';
       users = robot.brain.users()
       for k, u of users
