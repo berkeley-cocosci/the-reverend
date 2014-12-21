@@ -16,7 +16,7 @@
 
 module.exports = (robot) ->
 
-  robot.respond /(?:where\'s|where is|wheres|where are) @?([\w .\-]+)(?:\?)?$/i, (msg) ->
+  robot.respond /(?:where\'s|where is|wheres|where are|locate) @?([\w .\-]+)(?:\?)?$/i, (msg) ->
     name = msg.match[1].trim()
 
     if name is "you" or name.toLowerCase() is robot.name.toLowerCase()
